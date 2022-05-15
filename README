@@ -15,19 +15,28 @@ Requirements
 Simple steps to create a new autotools project
 ----------------------------------------------
 
+0) Dependencies
+
+```sh
+apt install rsync automake autoconf libtool devscripts dh-make git-buildpackage
+```
+
 1) Clone the repository
 
 2) Give it a quick try:
 
-        ~# bash autogen.sh
-        ~# cd build/
-        ~# ../configure
-        ~# make
-        ~# ./src/my_program
-        ~# make check
-        ~# make install
-        ~# my_program
-        ~# make uninstall
+```sh
+./set-version.sh <major>.<minor>.<patch>
+bash autogen.sh
+cd build/
+../configure
+make
+./src/my_program
+make check
+make install
+my_program
+make uninstall
+```
 
 3) Remove `.git/` folder
 

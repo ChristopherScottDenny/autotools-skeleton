@@ -4,8 +4,11 @@
 //Program specific headers
 //#include "config.h"
 #include "internal_header.h"
+#include "version.h"
 
 int main(int argc, char** argv){
+
+    printf("Version: %s\n", VERS_STR);
 
 	//Simply print the number of arguments and configurable options
 	fprintf(stderr, "%s launched with number of args: %d\n", argv[0],

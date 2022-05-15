@@ -1,0 +1,22 @@
+Source: myprog
+Section: non-free
+Priority: optional
+Maintainer: Christopher Denny <christopher.denny@hpe.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://github.com/ChristopherScottDenny/autotools-skeleton.git
+Vcs-Browser: https://github.com/ChristopherScottDenny/autotools-skeleton.git
+Vcs-Git: https://github.com/ChristopherScottDenny/autotools-skeleton.git
+Rules-Requires-Root: no
+
+Package: libmylib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: libmylib brief
+ libmylib details
+
+Package: myprog
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: myprog brief
+ myprog details
