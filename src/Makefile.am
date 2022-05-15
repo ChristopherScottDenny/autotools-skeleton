@@ -9,7 +9,7 @@ SUBDIRS = subdir
 #
 
 #Simple distributable library
-lib_LTLIBRARIES = libmy_lib.la
+lib_LTLIBRARIES = libmy-lib.la
 
 #Library sources
 libmy_lib_la_SOURCES = 	lib1.c
@@ -31,6 +31,6 @@ libmy_lib_la_CPPFLAGS = "-ITEST_MACRO"
 bin_PROGRAMS = my_program
 
 my_program_SOURCES = my_program.c
-my_program_LDADD = libmy_lib.la -lpthread -lrt
+my_program_LDADD = libmy-lib.la -lpthread -lrt
 
 #You can also tweak CFLAGS, CXXFLAGS and CPPFLAGS

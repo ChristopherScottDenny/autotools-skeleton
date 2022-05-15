@@ -2,7 +2,6 @@
 
 #Default
 MY_PROJECT_VERSION="$PACKAGE_VERSION" #Unknown (no GIT repository detected)"
-FILE_VERSION=`cat $srcdir/VERSION`
 
 AC_CHECK_PROG(ff_git,git,yes,no)
 

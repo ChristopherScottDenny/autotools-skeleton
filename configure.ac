@@ -1,5 +1,5 @@
-m4_include([VERSION]) #Force reconf on VERSION change
-AC_INIT(MY_PROJECT, m4_esyscmd_s(cat VERSION), john@doe.com, MyProject, http://github.com/msune/autotools-skeleton)
+AC_INIT(MY_PROJECT, m4_esyscmd_s([git describe --always | cut -d '/' -f2]), m4_esyscmd_s([git config user.email]), MyProject, m4_esyscmd_s(git config --get remote.origin.url))
+AC_CONFIG_FILES([src/version.h])
 
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([m4])

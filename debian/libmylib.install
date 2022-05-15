@@ -1,0 +1,4 @@
+usr/include/distributable_header.h
+usr/lib/*/libmy-lib.so*
+usr/lib/*/libmy-lib.la
+usr/lib/*/libmy-lib.a
