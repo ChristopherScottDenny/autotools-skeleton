@@ -1,0 +1,14 @@
+myprog (0.0.1) UNRELEASED; urgency=medium
+
+  [ Christopher Denny ]
+  * 
+
+  [ ChristopherScottDenny ]
+  * Initial commit
+
+  [ Christopher Denny ]
+  * Test, package now builds
+  * Update version printout
+  * UNRELEASED
+
+ -- Christopher Denny <christopherscottdenny@gmail.com>  Sun, 22 May 2022 11:09:24 -0500

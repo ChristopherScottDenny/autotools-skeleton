@@ -1,0 +1,22 @@
+Source: myprog
+Section: net
+Priority: optional
+Maintainer: Christopher Denny <christopherscottdenny@gmail.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: https://github.com/ChristopherScottDenny/autotools-skeleton.git
+Vcs-Browser: https://github.com/ChristopherScottDenny/autotools-skeleton.git
+Vcs-Git: https://github.com/ChristopherScottDenny/autotools-skeleton.git
+Rules-Requires-Root: no
+
+Package: libmylib
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Example packaged library
+ Example of how to package libraries in Debian.
+
+Package: myprog
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Example packaged program
+ Example of how to package binaries in Debian.
