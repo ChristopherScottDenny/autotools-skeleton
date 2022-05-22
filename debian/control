@@ -15,6 +15,12 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Example packaged library
  Example of how to package libraries in Debian.
 
+Package: libmylib-dev
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Example packaged library
+ Example of how to package libraries in Debian.
+
 Package: myprog
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
